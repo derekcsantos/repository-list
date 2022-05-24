@@ -6,7 +6,7 @@ import Repositories from "./pages/Repositories";
 
 export default function RoutesApp(){
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/repositories" element={<Repositories />} />
